@@ -1,0 +1,33 @@
+# Arquivo de localização para Portugues de Portugal do VMPlayer Installer.
+# Copyright 2016 Joel Chaves "Flacc" <joel_chaves@icloud.com> Thursday 14 January 01:37:06 WET 2016
+# Sob a Licença GNU GPL v2
+# Última atualização Thursday 14 January 01:37:06 WET 2016
+# Last update 2016/02/07 by pavroo
+
+LOCAL1="Sair"
+LOCAL2="Nome"
+LOCAL3="Descrição"
+LOCAL4="VMware Player On-Line Installer"
+LOCAL5="O Instalador Online oferece:\nVMware Player 12.x.x 64 bit\nor\nVMware Player 6.x.x 32 bit\n\nPor favor selecione uma opção:"
+LOCAL6="Instalar VMware Player"
+LOCAL7="Actualização VMware Player"
+LOCAL8="Remover VMware Player a partir do sistema"
+LOCAL9="Não fazer nada, vou instalá-lo mais tarde"
+LOCAL10="O aplicativo já está instalado!"
+LOCAL11="Sair..."
+LOCAL12="O aplicativo foi instalado com sucesso!"
+LOCAL13="Algo está errado! \nProvavelmente deve ter parado a instalação ou a ligação à Internet está com problemas.\n\nEnfim, se parou o instalador, pode executá-lo manualmente:"
+LOCAL14="Você tem que remover a versão antiga do VMware Player do seu sistema antes de instalar um novo. \n\nGostaria de removê-lo agora?"
+LOCAL15="Nada foi mudado! \n\nClique em OK para sair."
+LOCAL16="Alguma coisa está errada ! \nNão consegue encontrar a nova versão do VMware Player Installer. alguma coisa está errado!.\n\nVerifique a sua ligação à Internet e tente novamente."
+LOCAL17="A versão mais antiga do VMware Player foi removido assim não pode ser atualizado."
+LOCAL18="A versão mais antiga do VMware Player foi removido com sucesso.\n\nPode instalar a nova versão agora."
+LOCAL19="Teste de conexão com a Internet falhou!\n\nProvavelmente não está conectado à Internet ou o servidor está com problemas.\n\nConfira e tente novamente."
+LOCAL20="Não consegue encontrar VMware Player instalado no seu computador para que não pode ser atualizado."
+LOCAL21="Isto irá remover VMware Player de seu sistema.\n\nGostaria de removê-lo agora?"
+LOCAL22="VMware Player não foi removido."
+LOCAL23="VMware Player foi removido ou foi mesmo não instalado no seu computador."
+
+### .desktop file to be translated too
+# Name[pt_PT]=VMware Player Installer
+# Comment[pt_PT]=Isto permite-lhe instalar, atualizar e remover VMware Player

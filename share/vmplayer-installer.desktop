@@ -1,0 +1,22 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=VMware Player Installer
+Name[es_AR]=Instalador del reproductor VMware
+Name[fr_FR]=Installateur du lecteur multimédia VMware
+Name[ja_JP]=VMware Player インストーラー
+Name[pl]=VMware Player Instalator
+Name[pt_BR]=Instalador do VMware Player
+Name[pt_PT]=VMware Player Installer
+Comment=This lets you install, upgrade and remove VMware Player
+Comment[es_AR]=Esto le permite instalar, actualizar y eliminar el reproductor VMware
+Comment[fr_FR]=Ceci va vous permettre d'installer, mettre à jour ou supprimer le lecteur multimédia VMware
+Comment[it_IT]=Installa, aggiorna e rimuovi VMware Player
+Comment[ja_JP]=VMware Player をインストール・更新・削除できます
+Comment[pl]=Pozwala na instalację, aktualizację i usunięcie VMware Player
+Comment[pt_BR]=Isto permite-lhe instalar, atualizar e remover o VMware Player
+Comment[pt_PT]=Isto permite-lhe instalar, atualizar e remover VMware Player
+Exec=remsu /opt/vmplayer/vmplayer-installer
+Icon=vmware
+Categories=Application;System;
+Terminal=False
+Type=Application

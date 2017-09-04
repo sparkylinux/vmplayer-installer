@@ -1,0 +1,240 @@
+#!/bin/bash
+
+# VMware Player Installer is a script which can download the bundle package
+# from VMware server and run the installer
+# Created by Paweł "pavroo" Pijanowski 2014/08/15
+# Copyright 2014, 2015, 2016, 2017 under the GNU GPL2 License
+# Last update 2017/06/23
+
+DEFLOCDIR="/usr/share/sparky/vmplayer-installer"
+if [ "`cat /etc/default/locale | grep es_AR`" != "" ]; then
+. $DEFLOCDIR/es
+elif [ "`cat /etc/default/locale | grep fr_FR`" != "" ]; then
+. $DEFLOCDIR/fr
+elif [ "`cat /etc/default/locale | grep it_IT`" != "" ]; then
+. $DEFLOCDIR/it
+elif [ "`cat /etc/default/locale | grep ja_JP`" != "" ]; then
+. $DEFLOCDIR/ja
+elif [ "`cat /etc/default/locale | grep pl_PL`" != "" ]; then
+. $DEFLOCDIR/pl
+elif [ "`cat /etc/default/locale | grep pt_BR`" != "" ]; then
+. $DEFLOCDIR/pt_BR
+elif [ "`cat /etc/default/locale | grep pt_PT`" != "" ]; then
+. $DEFLOCDIR/pt_PT
+else
+. $DEFLOCDIR/en
+fi
+
+testroot="`whoami`"
+
+if [ "$testroot" != "root" ]; then
+	/usr/bin/remsu $0 &
+fi
+
+if [ -f /usr/share/icons/hicolor/48x48/apps/vmware-player.* ]; then
+	VMICON="vmware-player"
+else
+	VMICON="vmware"
+fi
+
+DIALOG="yad --window-icon=$VMICON --width=450 --height=200 --center"
+DIALOG2="yad --window-icon=$VMICON --width=450 --height=300 --center"
+TITLE="--always-print-result --dialog-sep --image=$VMICON --title="
+TEXT="--text="
+OKEXIT=" --button=Ok:0 --button=$LOCAL1:1 "
+MSGBOX=" --button=Ok:0 "
+MENU="--list --column=$LOCAL2 --column=$LOCAL3"
+TITLETEXT="$LOCAL4"
+WORKDIR="/tmp/vmplayer"
+ARCH=`uname -r | grep "amd64" | awk '{print $1}'`
+
+if [ -f /opt/sparky/sparky-xterm ]; then
+. /opt/sparky/sparky-xterm
+else
+SPARKYXTERM="x-terminal-emulator"
+fi
+
+SERVER="https://download3.vmware.com/software/player/file"
+PACK32="VMware-Player-6.0.6-2700073.i386.bundle"
+PACK64="VMware-Player-12.5.7-5813279.x86_64.bundle"
+
+mainmenu () {
+CHOICES=`$DIALOG2 $TITLE"$TITLETEXT" $OKEXIT $MENU $TEXT"$LOCAL5" \
+Install "$LOCAL6" \
+Upgrade "$LOCAL7" \
+Remove "$LOCAL8" \
+Exit "$LOCAL9"`
+
+if [ "$?" = "0" ]; then
+	CHOICE=`echo $CHOICES | cut -d "|" -f 1`
+else
+	exit 1
+fi
+
+if [ "$CHOICE" = "Install" ]; then
+	installmenu
+elif [ "$CHOICE" = "Upgrade" ]; then
+	upgrademenu
+elif [ "$CHOICE" = "Remove" ]; then
+	remmenu
+elif [ "$CHOICE" = "Exit" ]; then
+	exit 0
+else
+	exit 0
+fi
+}
+
+installmenu () {
+# check is vmplayer installed
+if [ -f /usr/bin/vmplayer ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL10\n\n$LOCAL11"
+	exit 1
+
+else
+	# checking connection
+	PINGTEST=$(ping -c 1 debian.org | grep [0-9])
+
+	if [ "$PINGTEST" = "" ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL19"
+		exit 1
+	fi
+
+	# download a new version of vmplayer
+	rm -rf $WORKDIR
+	mkdir -p $WORKDIR
+	cd $WORKDIR
+
+	if [ "$ARCH" = "" ]; then
+		$SPARKYXTERM -e wget $SERVER/$PACK32
+	else
+		$SPARKYXTERM -e wget $SERVER/$PACK64
+	fi
+
+	# install vmplayer
+	PACKTEST=`ls $WORKDIR | grep 'bundle' | awk '{print $1}'`
+
+	if [ -f $WORKDIR/*.bundle ]; then
+		cd $WORKDIR
+		sh $PACKTEST
+	fi
+fi
+
+# check has vmplayer been installed
+if [ -f /usr/bin/vmplayer ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL12\n\n$LOCAL11"
+	exit 0
+
+else
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL13 \n\nsudo sh $WORKDIR/$PACKTEST \n\n$LOCAL11"
+	mainmenu
+fi
+
+mainmenu
+}
+
+upgrademenu () {
+# check is vmplayer installed
+if [ -f /usr/bin/vmplayer ]; then
+	$DIALOG $TITLE"$TITLETEXT" $OKEXIT $TEXT"$LOCAL14"
+
+	if [ "$?" != "0" ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL15"
+		exit 1
+
+	else
+
+		# checking connection
+		PINGTEST=$(ping -c 1 debian.org | grep [0-9])
+
+		if [ "$PINGTEST" = "" ]; then
+			$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL19"
+			exit 1
+		fi
+
+		# download a new version of vmplayer
+		rm -rf $WORKDIR
+		mkdir -p $WORKDIR
+		cd $WORKDIR
+
+		if [ "$ARCH" = "" ]; then
+			$SPARKYXTERM -e wget $SERVER/$PACK32
+		else
+			$SPARKYXTERM -e wget $SERVER/$PACK64
+		fi
+
+		PACKTEST=`ls $WORKDIR | grep 'bundle' | awk '{print $1}'`
+
+		if [ -f $WORKDIR/*.bundle ]; then
+
+			# uninstall vmplayer
+			/usr/lib/vmware-installer/2.1.0/vmware-installer -u vmware-player
+
+		else
+			$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL16\n\n$LOCAL11"
+			mainmenu
+		fi
+	fi
+
+	# check has vmplayer been removed
+	if [ -f /usr/bin/vmplayer ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL17\n\n$LOCAL11"
+		mainmenu
+
+	else
+		# install a new version of vmplayer
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL18"
+
+		PACKTEST=`ls $WORKDIR | grep 'bundle' | awk '{print $1}'`
+		if [ -f $WORKDIR/*.bundle ]; then
+			cd $WORKDIR
+			sh $PACKTEST
+		fi
+	fi
+
+	# check has vmplayer been installed
+	if [ -f /usr/bin/vmplayer ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL12\n\n$LOCAL11"
+		exit 0
+	else
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL13 \n\nsudo sh $WORKDIR/$PACKTEST \n\n$LOCAL11"
+		mainmenu
+	fi
+
+else
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL20\n\n$LOCAL11"
+	mainmenu
+fi
+
+mainmenu
+}
+
+remmenu () {
+# check is vmplayer installed
+if [ -f /usr/bin/vmplayer ]; then
+	$DIALOG $TITLE"$TITLETEXT" $OKEXIT $TEXT"$LOCAL21"
+
+	if [ "$?" != "0" ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL15"
+		exit 1
+
+	else
+		# uninstall vmplayer
+		/usr/lib/vmware-installer/2.1.0/vmware-installer -u vmware-player
+	fi
+
+	# check has vmplayer been removed
+	if [ -f /usr/bin/vmplayer ]; then
+		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL22\n\n$LOCAL11"
+		mainmenu
+	fi
+
+else
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL23\n\n$LOCAL11"
+	mainmenu
+fi
+
+mainmenu
+
+}
+
+mainmenu

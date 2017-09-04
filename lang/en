@@ -1,0 +1,32 @@
+# English localization file for VMPlayer Installer.
+# Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/10
+# Under the GNU GPL v2
+# Last update 2016/02/07 by pavroo
+
+LOCAL1="Exit"
+LOCAL2="Name"
+LOCAL3="Description"
+LOCAL4="VMware Player On-Line Installer"
+LOCAL5="The On-Line Installer provides:\nVMware Player 12.x.x 64 bit\nor\nVMware Player 6.x.x 32 bit\n\nPlease select an option:"
+LOCAL6="Install VMware Player"
+LOCAL7="Upgrade VMware Player"
+LOCAL8="Remove VMware Player from the system"
+LOCAL9="Do nothing, I will install it later"
+LOCAL10="The application is already installed!"
+LOCAL11="Exiting..."
+LOCAL12="The application has been installed successfully!"
+LOCAL13="Something is wrong! \nProbably you have stopped the installation or your internet connection is broken.\n\nAnyway if you have downloaded the installer already, you can run it manually:"
+LOCAL14="You have to remove an older version of VMware Player from your system before installing a new one. \n\nWould you like to remove it now?"
+LOCAL15="Nothing has been changed! \n\nClick OK to quit."
+LOCAL16="Something is wrong! \nCan't find the new version of VMware Player Installer.\n\nCheck your internet connection and try again."
+LOCAL17="The older version of VMware Player has been NOT removed so can NOT be upgraded."
+LOCAL18="The older version of VMware Player has been removed successufully.\n\nYou can install the new one now."
+LOCAL19="Internet connection test failed!\n\nProbably you are NOT connected to the Internet or the project server is down.\n\nCheck it out and try again."
+LOCAL20="Can't find VMware Player installed on your computer so can NOT be upgraded."
+LOCAL21="This will remove VMware Player from your system.\n\nWould you like to remove it now?"
+LOCAL22="VMware Player has NOT been removed."
+LOCAL23="VMware Player has been removed or has not been installed on your computer."
+
+### .desktop file to be translated to
+# Name[en_US]=VMware Player Installer
+# Comment[en_US]=This lets you install, upgrade and remove VMware Player
