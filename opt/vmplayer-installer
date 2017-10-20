@@ -4,7 +4,7 @@
 # from VMware server and run the installer
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014, 2015, 2016, 2017 under the GNU GPL2 License
-# Last update 2017/06/23
+# Last update 2017/10/20
 
 DEFLOCDIR="/usr/share/sparky/vmplayer-installer"
 if [ "`cat /etc/default/locale | grep es_AR`" != "" ]; then
@@ -56,7 +56,7 @@ fi
 
 SERVER="https://download3.vmware.com/software/player/file"
 PACK32="VMware-Player-6.0.6-2700073.i386.bundle"
-PACK64="VMware-Player-12.5.7-5813279.x86_64.bundle"
+PACK64="VMware-Player-14.0.0-6661328.x86_64.bundle"
 
 mainmenu () {
 CHOICES=`$DIALOG2 $TITLE"$TITLETEXT" $OKEXIT $MENU $TEXT"$LOCAL5" \

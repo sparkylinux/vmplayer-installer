@@ -1,13 +1,13 @@
 ﻿# Fichier de localisation française de VMPlayer Installer.
 # Copyright 2016 hiver <hiver@club-internet.fr> 2016/05/12
 # Sous licence GNU GPL v2
-# Dernière mise à jour 2016/06/05
+# Last update 2017/10/20 by pavroo
 
 LOCAL1="Quitter"
 LOCAL2="Nom"
 LOCAL3="Description"
 LOCAL4="Installateur en ligne du lecteur multimédia VMware "
-LOCAL5="L'installateur en ligne propose:\nVMware Player 12.x.x 64 bit\nor\nVMware Player 6.x.x 32 bit\n\nChoisissez une option s'il vous plait:"
+LOCAL5="L'installateur en ligne propose:\nVMware Player 14.x.x 64 bit\nor\nVMware Player 6.x.x 32 bit\n\nChoisissez une option s'il vous plait:"
 LOCAL6="Installer le lecteur multimédia VMware"
 LOCAL7="Mettre à jour le lecteur multimédia VMware"
 LOCAL8="Enlever le lecteur multimédia VMware du système"

@@ -1,13 +1,13 @@
 # English localization file for VMPlayer Installer.
 # Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/10
 # Under the GNU GPL v2
-# Last update 2016/02/07 by pavroo
+# Last update 2017/10/20 by pavroo
 
 LOCAL1="Exit"
 LOCAL2="Name"
 LOCAL3="Description"
 LOCAL4="VMware Player On-Line Installer"
-LOCAL5="The On-Line Installer provides:\nVMware Player 12.x.x 64 bit\nor\nVMware Player 6.x.x 32 bit\n\nPlease select an option:"
+LOCAL5="The On-Line Installer provides:\nVMware Player 14.x.x 64 bit\nor\nVMware Player 6.x.x 32 bit\n\nPlease select an option:"
 LOCAL6="Install VMware Player"
 LOCAL7="Upgrade VMware Player"
 LOCAL8="Remove VMware Player from the system"

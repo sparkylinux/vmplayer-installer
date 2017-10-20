@@ -2,13 +2,13 @@
 # Copyright 2015 Fernando "seacat" Velo <seacat.linux@gmail.com> 2015/12/22
 # Bajo la licencia GNU GPL v2
 # Ultima actualización 2015/12/26
-# Last update 2016/02/07 by pavroo
+# Last update 2017/10/20 by pavroo
 
 LOCAL1="Salir"
 LOCAL2="Nombre"
 LOCAL3="Descripción"
 LOCAL4="Instalador online del reproductor VMware"
-LOCAL5="El instalador online proporciona:\nReproductor VMware 12.x.x 64 bits\no\nReproductor VMware Player 6.x.x 32 bits\n\nPor favor, elija una opción:"
+LOCAL5="El instalador online proporciona:\nReproductor VMware 14.x.x 64 bits\no\nReproductor VMware Player 6.x.x 32 bits\n\nPor favor, elija una opción:"
 LOCAL6="Instalar el reproductor VMware"
 LOCAL7="Actualizar el reproductor VMware"
 LOCAL8="Eliminar el reproductor VMware de su sistema"

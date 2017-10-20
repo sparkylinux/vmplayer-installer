@@ -2,13 +2,13 @@
 # Copyright 2015 Carlo Troiani <troianicarlo@gmail.com> 12/11/2015
 # Rilasciato sotto licenza GNU GPL v2
 # Ultimo aggiornamento 30/11/2015
-# Last update 2016/02/07 by pavroo
+# Last update 2017/10/20 by pavroo
 
 LOCAL1="Esci"
 LOCAL2="Nome"
 LOCAL3="Descrizione"
 LOCAL4="Installer On-line per VMware Player"
-LOCAL5="L'Installer On-Line può fornire:\nVMware Player 12.x.x a 64 bit\ne\nVMware Player 6.x.x a 32 bit\n\nPrego effettua una scelta:"
+LOCAL5="L'Installer On-Line può fornire:\nVMware Player 14.x.x a 64 bit\ne\nVMware Player 6.x.x a 32 bit\n\nPrego effettua una scelta:"
 LOCAL6="Installa VMware Player"
 LOCAL7="Aggiorna VMware Player"
 LOCAL8="Rimuovi VMware Player dal sistema"

@@ -2,13 +2,13 @@
 # Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/10
 # Under the GNU GPL v2
 # Translated to Polish by pavroo
-# Last update 2016/02/07 by pavroo
+# Last update 2017/10/20 by pavroo
 
 LOCAL1="Zakończ"
 LOCAL2="Nazwa"
 LOCAL3="Opis"
 LOCAL4="VMware Player On-Line Instalator"
-LOCAL5="Instalator On-Line dostarcza:\nVMware Player 12.x.x 64 bit\nlub\nVMware Player 6.x.x 32 bit\n\nProszę wybrać jedną z opcji:"
+LOCAL5="Instalator On-Line dostarcza:\nVMware Player 14.x.x 64 bit\nlub\nVMware Player 6.x.x 32 bit\n\nProszę wybrać jedną z opcji:"
 LOCAL6="Instalacja VMware Player"
 LOCAL7="Aktualizacja VMware Player"
 LOCAL8="Usunięcie VMware Player z systemu"

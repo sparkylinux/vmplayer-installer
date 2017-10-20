@@ -2,13 +2,13 @@
 # Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/10
 # Under the GNU GPL v2
 # Translated to Japanese by BALLOON a.k.a. Fu-sen.
-# Last update 2016/02/07 by pavroo
+# Last update 2017/10/20 by pavroo
 
 LOCAL1="終了"
 LOCAL2="名前"
 LOCAL3="説明"
 LOCAL4="VMware Player オンラインインストーラー"
-LOCAL5="このインストーラーで提供するのは次のとおりです:\nVMware Player 12.x.x 64 bit\nor\nVMware Player 6.x.x 32 bit\n\nオプションを選択して下さい:"
+LOCAL5="このインストーラーで提供するのは次のとおりです:\nVMware Player 14.x.x 64 bit\nor\nVMware Player 6.x.x 32 bit\n\nオプションを選択して下さい:"
 LOCAL6="VMware Player のインストール"
 LOCAL7="VMware Player の更新"
 LOCAL8="VMware Player をシステムから削除"

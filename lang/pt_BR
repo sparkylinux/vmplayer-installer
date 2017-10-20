@@ -3,13 +3,13 @@
 # Traduzido por  Joel Chaves "Flacc"  <joel_chaves@icloud.com> 14/01/2016
 # Revisado e adaptado por Claudio Cesar de Sá "ccs1664" <ccs1664@gmail.com> 30/01/2016
 # Sob a Licença GNU GPL v2
-# Last update 2016/02/07 by pavroo
+# Last update 2017/10/20 by pavroo
 
 LOCAL1="Sair"
 LOCAL2="Nome"
 LOCAL3="Descrição"
 LOCAL4="Instalador On-Line do VMware Player"
-LOCAL5="O Instalador Online oferece:\nVMware Player 12.x.x 64 bit\nor\nVMware Player 6.x.x 32 bit\n\nPor favor selecione uma opção:"
+LOCAL5="O Instalador Online oferece:\nVMware Player 14.x.x 64 bit\nor\nVMware Player 6.x.x 32 bit\n\nPor favor selecione uma opção:"
 LOCAL6="Instalar o VMware Player"
 LOCAL7="Atualização do VMware Player"
 LOCAL8="Remover o VMware Player  do sistema"

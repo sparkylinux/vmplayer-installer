@@ -2,13 +2,13 @@
 # Copyright 2016 Joel Chaves "Flacc" <joel_chaves@icloud.com> Thursday 14 January 01:37:06 WET 2016
 # Sob a Licença GNU GPL v2
 # Última atualização Thursday 14 January 01:37:06 WET 2016
-# Last update 2016/02/07 by pavroo
+# Last update 2017/10/20 by pavroo
 
 LOCAL1="Sair"
 LOCAL2="Nome"
 LOCAL3="Descrição"
 LOCAL4="VMware Player On-Line Installer"
-LOCAL5="O Instalador Online oferece:\nVMware Player 12.x.x 64 bit\nor\nVMware Player 6.x.x 32 bit\n\nPor favor selecione uma opção:"
+LOCAL5="O Instalador Online oferece:\nVMware Player 14.x.x 64 bit\nor\nVMware Player 6.x.x 32 bit\n\nPor favor selecione uma opção:"
 LOCAL6="Instalar VMware Player"
 LOCAL7="Actualização VMware Player"
 LOCAL8="Remover VMware Player a partir do sistema"
