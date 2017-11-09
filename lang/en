@@ -1,8 +1,7 @@
 # English localization file for VMPlayer Installer.
 # Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/10
 # Under the GNU GPL v2
-# Last update 2017/10/20 by pavroo
-
+# Last update 2017/11/09 by pavroo
 LOCAL1="Exit"
 LOCAL2="Name"
 LOCAL3="Description"
@@ -26,7 +25,7 @@ LOCAL20="Can't find VMware Player installed on your computer so can NOT be upgra
 LOCAL21="This will remove VMware Player from your system.\n\nWould you like to remove it now?"
 LOCAL22="VMware Player has NOT been removed."
 LOCAL23="VMware Player has been removed or has not been installed on your computer."
-
+LOCAL24="It can not be installed on your version of Debian/Sparky."
 ### .desktop file to be translated to
 # Name[en_US]=VMware Player Installer
 # Comment[en_US]=This lets you install, upgrade and remove VMware Player

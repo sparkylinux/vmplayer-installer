@@ -2,8 +2,7 @@
 # Copyright 2016 Joel Chaves "Flacc" <joel_chaves@icloud.com> Thursday 14 January 01:37:06 WET 2016
 # Sob a Licença GNU GPL v2
 # Última atualização Thursday 14 January 01:37:06 WET 2016
-# Last update 2017/10/20 by pavroo
-
+# Last update 2017/11/09 by pavroo
 LOCAL1="Sair"
 LOCAL2="Nome"
 LOCAL3="Descrição"
@@ -27,7 +26,7 @@ LOCAL20="Não consegue encontrar VMware Player instalado no seu computador para 
 LOCAL21="Isto irá remover VMware Player de seu sistema.\n\nGostaria de removê-lo agora?"
 LOCAL22="VMware Player não foi removido."
 LOCAL23="VMware Player foi removido ou foi mesmo não instalado no seu computador."
-
+LOCAL24="It can not be installed on your version of Debian/Sparky."
 ### .desktop file to be translated too
 # Name[pt_PT]=VMware Player Installer
 # Comment[pt_PT]=Isto permite-lhe instalar, atualizar e remover VMware Player
