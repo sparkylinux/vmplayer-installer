@@ -15,15 +15,12 @@
 #  Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
 
 if [ "$1" = "uninstall" ]; then
-	rm -rf /opt/vmplayer
+	rm -r /usr/bin/sparky-vmplayer-installer
    	rm -f /usr/share/applications/vmplayer-installer.desktop
 	rm -f /usr/share/menu/vmplayer-installer
 	rm -rf /usr/share/sparky/vmplayer-installer
 else
-	if [ ! -d /opt/vmplayer ]; then
-		mkdir -p /opt/vmplayer
-	fi
-	cp opt/vmplayer-installer /opt/vmplayer/
+	cp bin/sparky-vmplayer-installer /usr/bin/
 	cp share/vmplayer-installer.desktop /usr/share/applications/
 	cp share/vmplayer-installer /usr/share/menu/
 	if [ ! -d /usr/share/sparky/vmplayer-installer ]; then
