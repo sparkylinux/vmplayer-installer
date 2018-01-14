@@ -1,7 +1,7 @@
 VMware Installer
 This script can download, install, upgrade and remove VMware Workstaton/Player. It supports VMware Workstation Player version 14.x.x 64 bit and VMware Player 6.x.x 32 bit.
 
-Copyright (C) 2014-2017 Paweł Pijanowski
+Copyright (C) 2014-2018 Paweł Pijanowski
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
