@@ -1,0 +1,31 @@
+# German localization file for VMPlayer Installer by Deflet Bertling
+# Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/10
+# Under the GNU GPL v2
+# Last update 2018/03/16 by pavroo
+LOCAL1="Exit"
+LOCAL2="Name"
+LOCAL3="Beschreibung"
+LOCAL4="VMware Player online Installation"
+LOCAL5="Die online-Installion unterstützt:\nVMware Player 14.x.x 64 bit\bis\nVMware Player 6.x.x 32 bit\n\nBitte wähle eine Option:"
+LOCAL6="Installiere VMware Player"
+LOCAL7="Aktualisiere VMware Player"
+LOCAL8="Entferne VMware Player vom System"
+LOCAL9="Tu nichts, ich werde es später installieren"
+LOCAL10="Die Applikation ist schon installiert!"
+LOCAL11="beende..."
+LOCAL12="Die Applikation wurde erfolgreich installiert!"
+LOCAL13="Etwas ist falsch! \nMöglicherweise hast du die Installation gestoppt oder deine Internetverbindung ist unterbrochen.\n\nEgal, wenn du das Installationsprogramm schon geladen hast, kannst du es manuell starten:"
+LOCAL14="Du musst zuerst eine ältere Version des VMware Players vom System entfernen, bevor du eine neue installieren kannst. \n\nMöchtest du sie jetzt entfernen?"
+LOCAL15="Es wurde nichts geändert! \n\nklick OK zum Beenden."
+LOCAL16="Etwas ist falsch! \nIch kann die neue Version des VMware Player Installers nicht finden.\n\nPrüfe deine Internetverbindung und versuche es erneut."
+LOCAL17="Die ältere Version des VMware Players wurde NICHT entfernt und kann daher NICHT aktualisiert werden."
+LOCAL18="Die ältere Version des VMware Players wurde erfolgreich entfernt.\n\nDu kannst die neue jetzt installieren."
+LOCAL19="Test der Internetverbindung fehlgeschlagen!\n\nMöglicherweise bist du NICHT mit dem Internet verbunden oder der Hauptverzeichnissserver ist nicht erreichbar.\n\nÜberprüfe das und versuche es erneut."
+LOCAL20="Ich kann keinen VMware Player auf deinem Computer finden. Daher kann es NICHT aktualisiert werden."
+LOCAL21="Dieses wird den VMware Player von deinem System entfernen.\n\nMöchtest du ihn jetzt entfernen?"
+LOCAL22="VMware Player wurde NICHT entfernt."
+LOCAL23="VMware Player wurde entfernt oder war nicht auf deinem Computer installiert."
+LOCAL24="Das kann nicht mit deiner Version von Debian/Sparky installiert werden."
+### .desktop file to be translated to
+# Name[de_DE]=VMware Player Installer
+# Comment[de_DE]=Er lässt dich VMware Player installieren, aktualisieren und entfernen

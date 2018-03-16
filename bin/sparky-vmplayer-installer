@@ -4,10 +4,12 @@
 # from VMware server and run the installer
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2018 under the GNU GPL2 License
-# Last update 2018/01/09
+# Last update 2018/03/16
 
 DEFLOCDIR="/usr/share/sparky/vmplayer-installer"
-if [ "`cat /etc/default/locale | grep es_AR`" != "" ]; then
+if [ "`cat /etc/default/locale | grep de_DE`" != "" ]; then
+. $DEFLOCDIR/de
+elif [ "`cat /etc/default/locale | grep es_AR`" != "" ]; then
 . $DEFLOCDIR/es
 elif [ "`cat /etc/default/locale | grep fr_FR`" != "" ]; then
 . $DEFLOCDIR/fr
@@ -48,10 +50,10 @@ TITLETEXT="$LOCAL4"
 WORKDIR="/tmp/vmplayer"
 ARCH=`uname -r | grep "amd64" | awk '{print $1}'`
 
-if [ -f /opt/sparky/sparky-xterm ]; then
-. /opt/sparky/sparky-xterm
+if [ -f /usr/bin/sparky-terminal ]; then
+	SPARKYXTERM="sparky-terminal"
 else
-SPARKYXTERM="x-terminal-emulator"
+	SPARKYXTERM="x-terminal-emulator"
 fi
 
 SERVER="https://download3.vmware.com/software/player/file"
