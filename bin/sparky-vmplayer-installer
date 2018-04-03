@@ -4,7 +4,7 @@
 # from VMware server and run the installer
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2018 under the GNU GPL2 License
-# Last update 2018/03/16
+# Last update 2018/04/01
 
 DEFLOCDIR="/usr/share/sparky/vmplayer-installer"
 if [ "`cat /etc/default/locale | grep de_DE`" != "" ]; then
@@ -28,7 +28,6 @@ else
 fi
 
 testroot="`whoami`"
-
 if [ "$testroot" != "root" ]; then
 	/usr/bin/remsu $0 &
 fi
@@ -50,10 +49,11 @@ TITLETEXT="$LOCAL4"
 WORKDIR="/tmp/vmplayer"
 ARCH=`uname -r | grep "amd64" | awk '{print $1}'`
 
-if [ -f /usr/bin/sparky-terminal ]; then
-	SPARKYXTERM="sparky-terminal"
+if [ -f /usr/bin/sparky-xterm ];then
+	SPARKYXTERM="/usr/bin/sparky-xterm"
 else
-	SPARKYXTERM="x-terminal-emulator"
+	echo "sparky-xterm is missing... Exiting..."
+	exit 1
 fi
 
 SERVER="https://download3.vmware.com/software/player/file"
@@ -113,9 +113,9 @@ else
 	cd $WORKDIR
 
 	if [ "$ARCH" = "" ]; then
-		$SPARKYXTERM -e wget $SERVER/$PACK32
+		$SPARKYXTERM "wget $SERVER/$PACK32"
 	else
-		$SPARKYXTERM -e wget $SERVER/$PACK64
+		$SPARKYXTERM "wget $SERVER/$PACK64"
 	fi
 
 	# install vmplayer
@@ -165,9 +165,9 @@ if [ -f /usr/bin/vmplayer ]; then
 		cd $WORKDIR
 
 		if [ "$ARCH" = "" ]; then
-			$SPARKYXTERM -e wget $SERVER/$PACK32
+			$SPARKYXTERM "wget $SERVER/$PACK32"
 		else
-			$SPARKYXTERM -e wget $SERVER/$PACK64
+			$SPARKYXTERM "wget $SERVER/$PACK64"
 		fi
 
 		PACKTEST=`ls $WORKDIR | grep 'bundle' | awk '{print $1}'`
