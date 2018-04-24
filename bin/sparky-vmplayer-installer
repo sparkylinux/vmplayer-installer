@@ -4,7 +4,7 @@
 # from VMware server and run the installer
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2018 under the GNU GPL2 License
-# Last update 2018/04/01
+# Last update 2018/04/24
 
 DEFLOCDIR="/usr/share/sparky/vmplayer-installer"
 if [ "`cat /etc/default/locale | grep de_DE`" != "" ]; then
@@ -44,6 +44,7 @@ TITLE="--always-print-result --dialog-sep --image=$VMICON --title="
 TEXT="--text="
 OKEXIT=" --button=Ok:0 --button=$LOCAL1:1 "
 MSGBOX=" --button=Ok:0 "
+VMVERSION=" --button=14:0 --button=12:1 "
 MENU="--list --column=$LOCAL2 --column=$LOCAL3"
 TITLETEXT="$LOCAL4"
 WORKDIR="/tmp/vmplayer"
@@ -59,6 +60,7 @@ fi
 SERVER="https://download3.vmware.com/software/player/file"
 PACK32="VMware-Player-6.0.6-2700073.i386.bundle"
 PACK64="VMware-Player-14.1.1-7528167.x86_64.bundle"
+PACK6412="VMware-Player-12.5.9-7535481.x86_64.bundle"
 
 ARCHARM="`uname -m | grep arm`"
 if [ "$ARCHARM" != "" ]; then
@@ -97,41 +99,44 @@ installmenu () {
 if [ -f /usr/bin/vmplayer ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL10\n\n$LOCAL11"
 	exit 1
+fi
 
+# checking connection
+PINGTEST=$(ping -c 1 debian.org | grep [0-9])
+if [ "$PINGTEST" = "" ]; then
+	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL19"
+	exit 1
+fi
+
+# download a new version of vmplayer
+rm -rf $WORKDIR
+mkdir -p $WORKDIR
+cd $WORKDIR
+
+if [ "$ARCH" = "" ]; then
+	$SPARKYXTERM "wget $SERVER/$PACK32"
 else
-	# checking connection
-	PINGTEST=$(ping -c 1 debian.org | grep [0-9])
-
-	if [ "$PINGTEST" = "" ]; then
-		$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL19"
+	$DIALOG $TITLE"$TITLETEXT" $VMVERSION $TEXT"$LOCAL25"
+	if [ "$?" = "0" ]; then
+		$SPARKYXTERM "wget $SERVER/$PACK64"
+	elif [ "$?" = "1" ]; then
+		$SPARKYXTERM "wget $SERVER/$PACK6412"
+	else
 		exit 1
 	fi
+fi
 
-	# download a new version of vmplayer
-	rm -rf $WORKDIR
-	mkdir -p $WORKDIR
+# install vmplayer
+PACKTEST=`ls $WORKDIR | grep 'bundle' | awk '{print $1}'`
+if [ -f $WORKDIR/*.bundle ]; then
 	cd $WORKDIR
-
-	if [ "$ARCH" = "" ]; then
-		$SPARKYXTERM "wget $SERVER/$PACK32"
-	else
-		$SPARKYXTERM "wget $SERVER/$PACK64"
-	fi
-
-	# install vmplayer
-	PACKTEST=`ls $WORKDIR | grep 'bundle' | awk '{print $1}'`
-
-	if [ -f $WORKDIR/*.bundle ]; then
-		cd $WORKDIR
-		sh $PACKTEST
-	fi
+	sh $PACKTEST
 fi
 
 # check has vmplayer been installed
 if [ -f /usr/bin/vmplayer ]; then
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL12\n\n$LOCAL11"
 	exit 0
-
 else
 	$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL13 \n\nsudo sh $WORKDIR/$PACKTEST \n\n$LOCAL11"
 	mainmenu
@@ -167,16 +172,21 @@ if [ -f /usr/bin/vmplayer ]; then
 		if [ "$ARCH" = "" ]; then
 			$SPARKYXTERM "wget $SERVER/$PACK32"
 		else
-			$SPARKYXTERM "wget $SERVER/$PACK64"
+			$DIALOG $TITLE"$TITLETEXT" $VMVERSION $TEXT"$LOCAL25"
+			if [ "$?" = "0" ]; then
+				$SPARKYXTERM "wget $SERVER/$PACK64"
+			elif [ "$?" = "1" ]; then
+				$SPARKYXTERM "wget $SERVER/$PACK6412"
+			else
+				exit 1
+			fi
 		fi
 
 		PACKTEST=`ls $WORKDIR | grep 'bundle' | awk '{print $1}'`
-
 		if [ -f $WORKDIR/*.bundle ]; then
 
 			# uninstall vmplayer
 			/usr/lib/vmware-installer/2.1.0/vmware-installer -u vmware-player
-
 		else
 			$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL16\n\n$LOCAL11"
 			mainmenu

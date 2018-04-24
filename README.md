@@ -1,5 +1,5 @@
 VMware Installer
-This script can download, install, upgrade and remove VMware Workstaton/Player. It supports VMware Workstation Player version 14.x.x 64 bit and VMware Player 6.x.x 32 bit.
+This script can download, install, upgrade and remove VMware Workstaton/Player. It supports VMware Workstation Player version 14/12 64 bit and VMware Player 6 32 bit.
 
 Copyright (C) 2014-2018 Paweł Pijanowski
 
@@ -26,6 +26,10 @@ sparky-remsu
 sparky-xterm (>= 0.2.0)
 wget
 yad
+
+Recommends:
+-------------
+sparky-aptus
 
 Install:
 -------------

@@ -1,1 +1,0 @@
-?package(vmplayer-installer):needs="X11" section="Applications/Utility"        title="VMware Player Installer" command="remsu /usr/bin/sparky-vmplayer-installer" icon="vmware"

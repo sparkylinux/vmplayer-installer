@@ -16,15 +16,16 @@
 
 if [ "$1" = "uninstall" ]; then
 	rm -r /usr/bin/sparky-vmplayer-installer
-   	rm -f /usr/share/applications/vmplayer-installer.desktop
-	rm -f /usr/share/menu/vmplayer-installer
 	rm -rf /usr/share/sparky/vmplayer-installer
+	rm -f /usr/lib/sparky-aptus/system/vmplayer-installer.desktop
 else
 	cp bin/sparky-vmplayer-installer /usr/bin/
-	cp share/vmplayer-installer.desktop /usr/share/applications/
-	cp share/vmplayer-installer /usr/share/menu/
 	if [ ! -d /usr/share/sparky/vmplayer-installer ]; then
 		mkdir -p /usr/share/sparky/vmplayer-installer
 	fi
 	cp lang/* /usr/share/sparky/vmplayer-installer/
+	if [ ! -d /usr/lib/sparky-aptus/system ]; then
+		mkdir -p /usr/lib/sparky-aptus/system
+	fi
+	cp system/* /usr/lib/sparky-aptus/system/
 fi

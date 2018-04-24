@@ -1,12 +1,12 @@
 ﻿# Fichier de localisation française de VMPlayer Installer.
 # Copyright 2016 hiver <hiver@club-internet.fr> 2016/05/12
 # Sous licence GNU GPL v2
-# Last update 2017/11/09 by pavroo
+# Last update 2018/04/24 by pavroo
 LOCAL1="Quitter"
 LOCAL2="Nom"
 LOCAL3="Description"
 LOCAL4="Installateur en ligne du lecteur multimédia VMware "
-LOCAL5="L'installateur en ligne propose:\nVMware Player 14.x.x 64 bit\nor\nVMware Player 6.x.x 32 bit\n\nChoisissez une option s'il vous plait:"
+LOCAL5="L'installateur en ligne propose:\nVMware Player 14/12 64 bit\nor\nVMware Player 6 32 bit\n\nChoisissez une option s'il vous plait:"
 LOCAL6="Installer le lecteur multimédia VMware"
 LOCAL7="Mettre à jour le lecteur multimédia VMware"
 LOCAL8="Enlever le lecteur multimédia VMware du système"
@@ -26,6 +26,7 @@ LOCAL21="Ceci va supprimer le lecteur multimédia VMware de votre système.\n\nV
 LOCAL22="Le lecteur multimédia VMware n'a pu être supprimé."
 LOCAL23="Le lecteur multimédia VMware a été supprimé ou n'a pas été installé sur l'ordinateur."
 LOCAL24="It can not be installed on your version of Debian/Sparky."
+LOCAL25="Choose a VMware version to be installed: 14 or 12."
 ### .desktop file to be translated to
 # Name[fr_FR]=Installateur du lecteur multimédia VMware
 # Comment[fr_FR]=Ceci va vous permettre d'installer, mettre à jour ou supprimer le lecteur multimédia VMware
