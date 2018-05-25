@@ -4,7 +4,7 @@
 # from VMware server and run the installer
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2018 under the GNU GPL2 License
-# Last update 2018/04/28
+# Last update 2018/05/25
 
 DEFLOCDIR="/usr/share/sparky/vmplayer-installer"
 if [ "`cat /etc/default/locale | grep de_DE`" != "" ]; then
@@ -32,14 +32,8 @@ if [ "$testroot" != "root" ]; then
 	/usr/bin/remsu $0 &
 fi
 
-#if [ -f /usr/share/icons/hicolor/48x48/apps/vmware-player.* ]; then
-#	VMICON="vmware-player"
-#else
-	VMICON="vmware"
-#fi
-
-DIALOG="yad --window-icon=$VMICON --width=450 --height=200 --center"
-DIALOG2="yad --window-icon=$VMICON --width=450 --height=300 --center"
+DIALOG="yad --window-icon=vmware --width=450 --height=200 --center"
+DIALOG2="yad --window-icon=vmware --width=450 --height=300 --center"
 TITLE="--always-print-result --dialog-sep --image=$VMICON --title="
 TEXT="--text="
 OKEXIT=" --button=Ok:0 --button=$LOCAL1:1 "
@@ -59,7 +53,7 @@ fi
 
 SERVER="https://download3.vmware.com/software/player/file"
 PACK32="VMware-Player-6.0.6-2700073.i386.bundle"
-PACK64="VMware-Player-14.1.1-7528167.x86_64.bundle"
+PACK64="VMware-Player-14.1.2-8497320.x86_64.bundle"
 PACK6412="VMware-Player-12.5.9-7535481.x86_64.bundle"
 
 ARCHARM="`uname -m | grep arm`"
