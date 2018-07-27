@@ -1,0 +1,33 @@
+# Indonesian localization file for VMPlayer Installer.
+# Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/10
+# Under the GNU GPL v2
+# Last update 2018/07/27 by pavroo
+# Translated to Indonesian by les kompie
+LOCAL1="Keluar"
+LOCAL2="Nama"
+LOCAL3="Deskripsi"
+LOCAL4="Penginstal Online VMware Player"
+LOCAL5="Penginstal online menyediakan:\nVMware Player 14.x.x 64 bit\atau\nVMware Player 6.x.x 32 bit\n\nPilih salah satu:"
+LOCAL6="Instal VMware Player"
+LOCAL7="Upgrade VMware Player"
+LOCAL8="Hapus VMware Player dari sistem"
+LOCAL9="Tidak usah melakukan apa-apa, saya akan menginstalnya nanti"
+LOCAL10="Aplikasi sudah ter-instal!"
+LOCAL11="Keluar..."
+LOCAL12="Aplikasi sudah berhasil di-instal!"
+LOCAL13="Ada yang salah!\nMungkin anda menghentikan proses instal, atau koneksi internet terputus.\n\nTapi jika anda sudah mengunduh penginstalnya, anda bisa menjalankannya secara manual:"
+LOCAL14="Anda harus menghapus VMware Player versi lama dari sistem, sebelum menginstal yang baru.\n\nAnda mau menghapusnya sekarang?"
+LOCAL15="Tidak ada yang berubah!\n\nKlik OK untuk keluar."
+LOCAL16="Ada yang salah!\nVersi baru Penginstal VMware Player tidak ditemukan.\n\nPeriksa koneksi internet dan coba lagi."
+LOCAL17="Versi VMware Player lama BELUM dihapus, jadi TIDAK bisa di-upgrade."
+LOCAL18="Versi VMware Player lama sudah berhasil dihapus.\n\nAnda bisa menginstal yang baru sekarang."
+LOCAL19="Uji koneksi internet gagal!\n\nMungkin anda tidak terhubung ke Internet, atau server proyek sedang mati.\n\nPeriksa dan coba lagi."
+LOCAL20="Instalasi VMware Player tidak ditemukan di komputer anda, jadi TIDAK bisa di-upgrade."
+LOCAL21="Ini akan menghapus VMware Player dari sistem anda.\n\nApakah anda ingin menghapusnya sekarang?"
+LOCAL22="VMware Player BELUM dihapus."
+LOCAL23="VMware Player sudah dihapus, atau belum di-instal di komputer anda."
+LOCAL24="Ini tidak bisa di-instal di versi Debian/Sparky anda."
+### .desktop file to be translated to
+# Name[id_ID]=Penginstal VMware Player
+# Comment[id_ID]=Ini untuk menginstal, upgrade dan menghapus VMware Player
+
