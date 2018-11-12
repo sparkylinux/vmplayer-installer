@@ -1,13 +1,13 @@
 # Indonesian localization file for VMPlayer Installer.
 # Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/10
 # Under the GNU GPL v2
-# Last update 2018/07/27 by pavroo
+# Last update 2018/11/12 by pavroo
 # Translated to Indonesian by les kompie
 LOCAL1="Keluar"
 LOCAL2="Nama"
 LOCAL3="Deskripsi"
 LOCAL4="Penginstal Online VMware Player"
-LOCAL5="Penginstal online menyediakan:\nVMware Player 14.x.x 64 bit\atau\nVMware Player 6.x.x 32 bit\n\nPilih salah satu:"
+LOCAL5="Penginstal online menyediakan:\nVMware Player 15.x.x 64 bit\atau\nVMware Player 6.x.x 32 bit\n\nPilih salah satu:"
 LOCAL6="Instal VMware Player"
 LOCAL7="Upgrade VMware Player"
 LOCAL8="Hapus VMware Player dari sistem"
@@ -16,7 +16,7 @@ LOCAL10="Aplikasi sudah ter-instal!"
 LOCAL11="Keluar..."
 LOCAL12="Aplikasi sudah berhasil di-instal!"
 LOCAL13="Ada yang salah!\nMungkin anda menghentikan proses instal, atau koneksi internet terputus.\n\nTapi jika anda sudah mengunduh penginstalnya, anda bisa menjalankannya secara manual:"
-LOCAL14="Anda harus menghapus VMware Player versi lama dari sistem, sebelum menginstal yang baru.\n\nAnda mau menghapusnya sekarang?"
+LOCAL15="Anda harus menghapus VMware Player versi lama dari sistem, sebelum menginstal yang baru.\n\nAnda mau menghapusnya sekarang?"
 LOCAL15="Tidak ada yang berubah!\n\nKlik OK untuk keluar."
 LOCAL16="Ada yang salah!\nVersi baru Penginstal VMware Player tidak ditemukan.\n\nPeriksa koneksi internet dan coba lagi."
 LOCAL17="Versi VMware Player lama BELUM dihapus, jadi TIDAK bisa di-upgrade."

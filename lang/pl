@@ -2,12 +2,12 @@
 # Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/10
 # Under the GNU GPL v2
 # Translated to Polish by pavroo
-# Last update 2018/04/24 by pavroo
+# Last update 2018/11/12 by pavroo
 LOCAL1="Zakończ"
 LOCAL2="Nazwa"
 LOCAL3="Opis"
 LOCAL4="VMware Player On-Line Instalator"
-LOCAL5="Instalator On-Line dostarcza:\nVMware Player 14/12 64 bit\nlub\nVMware Player 6 32 bit\n\nProszę wybrać jedną z opcji:"
+LOCAL5="Instalator On-Line dostarcza:\nVMware Player 15/12 64 bit\nlub\nVMware Player 6 32 bit\n\nProszę wybrać jedną z opcji:"
 LOCAL6="Instalacja VMware Player"
 LOCAL7="Aktualizacja VMware Player"
 LOCAL8="Usunięcie VMware Player z systemu"
@@ -16,7 +16,7 @@ LOCAL10="Aplikacja jest już zainstalowana!"
 LOCAL11="Wyjście..."
 LOCAL12="Aplikacja została pomyślnie zainstalowana!"
 LOCAL13="Coś poszło źle! \nPrawdopodobnie zatrzymałeś instalację lub połączenie z internetem zostało przerwane.\n\nJeśli instalator został już pobrany, możesz go uruchomić ręcznie:"
-LOCAL14="Musisz usunąć starszą wersję VMware Player z systemu, zanim zainstalujesz nową.\n\nCzy chcesz usunąć teraz?"
+LOCAL15="Musisz usunąć starszą wersję VMware Player z systemu, zanim zainstalujesz nową.\n\nCzy chcesz usunąć teraz?"
 LOCAL15="Żadne zmiany nie zostały wprowadzone! \n\nKliknij OK aby zakończyć."
 LOCAL16="Coś poszło źle! \nNowa wersja instalatora VMware Player nie została pobrana.\n\nSprawdź połączenie z internetem i spróbuj ponownie."
 LOCAL17="Starsza wersja VMware Player NIE została usunięta, więc nie może być zaktualizowana."
@@ -27,7 +27,7 @@ LOCAL21="Usunięcie VMware Player z systemu.\n\nCzy chcesz usunąć teraz?"
 LOCAL22="VMware Player NIE został usunięty."
 LOCAL23="VMware Player został usunięty lub nawet nie był zainstalowany na Twoim komputerze."
 LOCAL24="Ta aplikacja nie może być zainstalowany na obecnej wersji Debiana/Sparky."
-LOCAL25="Wybierz wersję VMware do zainstalowania: 14 lub 12."
+LOCAL25="Wybierz wersję VMware do zainstalowania: 15 lub 12."
 ### .desktop file, również do przetłumaczenia
 # Name[pl_PL]=VMware Player Instalator
 # Comment[pl_PL]=Pozwala na instalację, aktualizację i usunięcie VMware Player

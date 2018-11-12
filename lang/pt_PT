@@ -1,12 +1,12 @@
 # Arquivo de localização para Portugues de Portugal do VMPlayer Installer.
-# Copyright 2016 Joel Chaves "Flacc" <joel_chaves@icloud.com> Thursday 14 January 01:37:06 WET 2016
+# Copyright 2016 Joel Chaves "Flacc" <joel_chaves@icloud.com> Thursday 15 January 01:37:06 WET 2016
 # Sob a Licença GNU GPL v2
-# Last update 2018/04/24 by pavroo
+# Last update 2018/11/12 by pavroo
 LOCAL1="Sair"
 LOCAL2="Nome"
 LOCAL3="Descrição"
 LOCAL4="VMware Player On-Line Installer"
-LOCAL5="O Instalador Online oferece:\nVMware Player 14/12 64 bit\nor\nVMware Player 6 32 bit\n\nPor favor selecione uma opção:"
+LOCAL5="O Instalador Online oferece:\nVMware Player 15/12 64 bit\nor\nVMware Player 6 32 bit\n\nPor favor selecione uma opção:"
 LOCAL6="Instalar VMware Player"
 LOCAL7="Actualização VMware Player"
 LOCAL8="Remover VMware Player a partir do sistema"
@@ -15,7 +15,7 @@ LOCAL10="O aplicativo já está instalado!"
 LOCAL11="Sair..."
 LOCAL12="O aplicativo foi instalado com sucesso!"
 LOCAL13="Algo está errado! \nProvavelmente deve ter parado a instalação ou a ligação à Internet está com problemas.\n\nEnfim, se parou o instalador, pode executá-lo manualmente:"
-LOCAL14="Você tem que remover a versão antiga do VMware Player do seu sistema antes de instalar um novo. \n\nGostaria de removê-lo agora?"
+LOCAL15="Você tem que remover a versão antiga do VMware Player do seu sistema antes de instalar um novo. \n\nGostaria de removê-lo agora?"
 LOCAL15="Nada foi mudado! \n\nClique em OK para sair."
 LOCAL16="Alguma coisa está errada ! \nNão consegue encontrar a nova versão do VMware Player Installer. alguma coisa está errado!.\n\nVerifique a sua ligação à Internet e tente novamente."
 LOCAL17="A versão mais antiga do VMware Player foi removido assim não pode ser atualizado."
@@ -26,7 +26,7 @@ LOCAL21="Isto irá remover VMware Player de seu sistema.\n\nGostaria de removê-
 LOCAL22="VMware Player não foi removido."
 LOCAL23="VMware Player foi removido ou foi mesmo não instalado no seu computador."
 LOCAL24="It can not be installed on your version of Debian/Sparky."
-LOCAL25="Choose a VMware version to be installed: 14 or 12."
+LOCAL25="Choose a VMware version to be installed: 15 or 12."
 ### .desktop file to be translated too
 # Name[pt_PT]=VMware Player Installer
 # Comment[pt_PT]=Isto permite-lhe instalar, atualizar e remover VMware Player

@@ -2,12 +2,12 @@
 # Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/10
 # Under the GNU GPL v2
 # Translated to Japanese by BALLOON a.k.a. Fu-sen.
-# Last update 2018/04/24 by pavroo
+# Last update 2018/11/12 by pavroo
 LOCAL1="終了"
 LOCAL2="名前"
 LOCAL3="説明"
 LOCAL4="VMware Player オンラインインストーラー"
-LOCAL5="このインストーラーで提供するのは次のとおりです:\nVMware Player 14/12 64 bit\nor\nVMware Player 6 32 bit\n\nオプションを選択して下さい:"
+LOCAL5="このインストーラーで提供するのは次のとおりです:\nVMware Player 15/12 64 bit\nor\nVMware Player 6 32 bit\n\nオプションを選択して下さい:"
 LOCAL6="VMware Player のインストール"
 LOCAL7="VMware Player の更新"
 LOCAL8="VMware Player をシステムから削除"
@@ -16,7 +16,7 @@ LOCAL10="アプリケーションはすでにインストールされていま�
 LOCAL11="終了します..."
 LOCAL12="アプリケーションはインストールしました！"
 LOCAL13="何か問題があります！ \nインストールを停止しているか、インターネット接続が切断されています。\n\nすでにインストーラーでダウンロードした場合は手動で実行する事ができます:"
-LOCAL14="新しい VMware Player をインストールする前に、システムから古いバージョンを削除する必要があります。 \n\n削除を行ってよろしいですか？"
+LOCAL15="新しい VMware Player をインストールする前に、システムから古いバージョンを削除する必要があります。 \n\n削除を行ってよろしいですか？"
 LOCAL15="何も変更されていません！ \n\nOK のクリックで終了します。"
 LOCAL16="何か問題があります！ \nVMware Player インストーラの新しいバージョンを見つけることができません。\n\nインターネット接続を確認し、再度行って下さい。"
 LOCAL17="VMware Playerの古いバージョン削除されなかったため、アップグレードすることはできません。"
@@ -27,7 +27,7 @@ LOCAL21="システムから VMware Player を削除します。\n\n削除して�
 LOCAL22="VMware Player は削除されませんでした。"
 LOCAL23="VMware Player は削除されたか、インストールされていません。"
 LOCAL24="It can not be installed on your version of Debian/Sparky."
-LOCAL25="Choose a VMware version to be installed: 14 or 12."
+LOCAL25="Choose a VMware version to be installed: 15 or 12."
 ### .desktop file to be translated too
 # Name[ja_JP]=VMware Player インストーラー
 # Comment[ja_JP]=VMware Player をインストール・更新・削除できます
