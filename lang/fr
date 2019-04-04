@@ -1,7 +1,7 @@
 ﻿# Fichier de localisation française de VMPlayer Installer.
 # Copyright 2016 hiver <hiver@club-internet.fr> 2016/05/12
 # Sous licence GNU GPL v2
-# Last update 2018/11/12 by pavroo
+# Last update 2019/04/04 by pavroo
 LOCAL1="Quitter"
 LOCAL2="Nom"
 LOCAL3="Description"
@@ -15,7 +15,7 @@ LOCAL10="L'application est déjà installée!"
 LOCAL11="Quitter..."
 LOCAL12="L'application a été installée avec succès!"
 LOCAL13="Il y a un problème! \nPeut-être avez-vous stoppé l'installation ou bien votre connexion internet est interrompue.\n\nEn tout cas si vous avez téléchargé l'installateur, vous pouvez l'exécuter manuellement:"
-LOCAL15="Vous devez supprimer l'ancienne version du lecteur multimédia VMware du système avant d'installer la nouvelle version. \n\nVoulez-vous la supprimer maintenant?"
+LOCAL14="Vous devez supprimer l'ancienne version du lecteur multimédia VMware du système avant d'installer la nouvelle version. \n\nVoulez-vous la supprimer maintenant?"
 LOCAL15="Rien n'a été modifié! \n\nCliquez sur OK pour quitter."
 LOCAL16="Il y a un problème! \nLa nouvelle version de l'installateur du lecteur multimédia VMware n'a pu être trouvée.\n\nVérifiez la connexion internet et essayez à nouveau."
 LOCAL17="L'ancienne version du lecteur multimédia VMware n'a pu être désinstallée et ne peut donc être mise à jour."

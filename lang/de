@@ -1,7 +1,7 @@
 # German localization file for VMPlayer Installer by Deflet Bertling
 # Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/10
 # Under the GNU GPL v2
-# Last update 2018/11/12 by pavroo
+# Last update 2019/04/04 by pavroo
 LOCAL1="Exit"
 LOCAL2="Name"
 LOCAL3="Beschreibung"
@@ -15,7 +15,7 @@ LOCAL10="Die Applikation ist schon installiert!"
 LOCAL11="beende..."
 LOCAL12="Die Applikation wurde erfolgreich installiert!"
 LOCAL13="Etwas ist falsch! \nMöglicherweise hast du die Installation gestoppt oder deine Internetverbindung ist unterbrochen.\n\nEgal, wenn du das Installationsprogramm schon geladen hast, kannst du es manuell starten:"
-LOCAL15="Du musst zuerst eine ältere Version des VMware Players vom System entfernen, bevor du eine neue installieren kannst. \n\nMöchtest du sie jetzt entfernen?"
+LOCAL14="Du musst zuerst eine ältere Version des VMware Players vom System entfernen, bevor du eine neue installieren kannst. \n\nMöchtest du sie jetzt entfernen?"
 LOCAL15="Es wurde nichts geändert! \n\nklick OK zum Beenden."
 LOCAL16="Etwas ist falsch! \nIch kann die neue Version des VMware Player Installers nicht finden.\n\nPrüfe deine Internetverbindung und versuche es erneut."
 LOCAL17="Die ältere Version des VMware Players wurde NICHT entfernt und kann daher NICHT aktualisiert werden."

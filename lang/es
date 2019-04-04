@@ -1,7 +1,7 @@
 # Archivo de localización en español para VMPlayer Installer.
 # Copyright 2015 Fernando "seacat" Velo <seacat.linux@gmail.com> 2015/12/22
 # Bajo la licencia GNU GPL v2
-# Last update 2018/11/12 by pavroo
+# Last update 2019/04/04 by pavroo
 LOCAL1="Salir"
 LOCAL2="Nombre"
 LOCAL3="Descripción"
@@ -15,7 +15,7 @@ LOCAL10="¡La aplicación ya está instalada!"
 LOCAL11="Saliendo..."
 LOCAL12="¡La aplicación se instaló correctamente!"
 LOCAL13="¡Algo está mal! \nProbablemente Ud haya detenido la instalación o se haya cortado su conexión a Internet.\n\nDe cualquier forma, si ya descargó el instalador, puede ejecutarlo manualmente:"
-LOCAL15="Ud tiene que eliminar la versión vieja del reproductor VMware de su sistema antes de instalar la nueva. \n\n¿Quiere eliminarla ahora?"
+LOCAL14="Ud tiene que eliminar la versión vieja del reproductor VMware de su sistema antes de instalar la nueva. \n\n¿Quiere eliminarla ahora?"
 LOCAL15="¡No cambió nada! \n\nHacer clic en OK para salir."
 LOCAL16="¡Algo está mal! \nNose puede encontrar la nueva versión del instalador del reproductor VMware.\n\nVerifique su conexión a Internet e inténtelo nuevamente."
 LOCAL17="NO se eliminó la vieja versión del reproductor VMware, por lo que NO se pudo actualizarla."

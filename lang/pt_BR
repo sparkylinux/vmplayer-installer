@@ -3,7 +3,7 @@
 # Traduzido por  Joel Chaves "Flacc"  <joel_chaves@icloud.com> 15/01/2016
 # Revisado e adaptado por Claudio Cesar de Sá "ccs1664" <ccs1664@gmail.com> 30/01/2016
 # Sob a Licença GNU GPL v2
-# Last update 2018/11/12 by pavroo
+# Last update 2019/04/04 by pavroo
 LOCAL1="Sair"
 LOCAL2="Nome"
 LOCAL3="Descrição"
@@ -17,7 +17,7 @@ LOCAL10="O aplicativo já está instalado!"
 LOCAL11="Sair..."
 LOCAL12="O aplicativo foi instalado com sucesso!"
 LOCAL13="Algo está errado!\nProvavelmente voce deve ter parado a instalação ou a conexão com à Internet está com problemas.\n\nEnfim, se voce fez download completo do instalador, voce  pode executá-lo manualmente:"
-LOCAL15="Você tem que remover a versão antiga do VMware Player do seu sistema antes de instalar um novo. \n\nGostaria de removê-lo agora?"
+LOCAL14="Você tem que remover a versão antiga do VMware Player do seu sistema antes de instalar um novo. \n\nGostaria de removê-lo agora?"
 LOCAL15="Nada foi modificado!\n\nClique em OK para sair."
 LOCAL16="Alguma coisa está errada ! \nNão conseguiu encontrar a nova versão  do Instalador do VMware Player. Alguma coisa está errada!.\n\nVerifique a sua conexão com a Internet e tente novamente."
 LOCAL17="A versão mais antiga do VMware Player NÃO pode ser removida assim NÃO pode ser atualizado por uma versão mais nova."

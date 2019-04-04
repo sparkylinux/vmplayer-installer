@@ -1,7 +1,7 @@
 # File di localizzazione in Italiano per VMPlayer Installer.,
 # Copyright 2015 Carlo Troiani <troianicarlo@gmail.com> 12/11/2015
 # Rilasciato sotto licenza GNU GPL v2
-# Last update 2018/11/12 by pavroo
+# Last update 2019/04/04 by pavroo
 LOCAL1="Esci"
 LOCAL2="Nome"
 LOCAL3="Descrizione"
@@ -15,7 +15,7 @@ LOCAL10="L'applicazione è già stata installata!"
 LOCAL11="Sto ucendo..."
 LOCAL12="L'applicazione è stata installata correttamente!"
 LOCAL13="Qualcosa è andato storto! \nProbabilmente hai interrotto l'installazione o la tua connessione internet è caduta.\n\nAd ogni modo, se hai già scaricato l'installer puoi provare a lanciarlo da terminale:"
-LOCAL15="È stata rilevata uina versione piuù vecchiua di VMPLayer sul tuo sistema: devi rimuoverla prima di poter installarne una nuova. \n\nVuoi rimuoverla adesso?"
+LOCAL14="È stata rilevata uina versione piuù vecchiua di VMPLayer sul tuo sistema: devi rimuoverla prima di poter installarne una nuova. \n\nVuoi rimuoverla adesso?"
 LOCAL15="Non è stato modificato nulla! \n\nClicca su OK per uscire."
 LOCAL16="Qualcosa è andato storto! \nNon posso trovare la nuova versione di VMPlayer Installer.\n\nControlla la tua connessione Internet e prova di nuovo."
 LOCAL17="La vecchia versione di VMware Player NON è stata rimossa, quindi NON posso procedere con l'installazione della nuova."

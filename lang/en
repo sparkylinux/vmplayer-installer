@@ -1,7 +1,7 @@
 # English localization file for VMPlayer Installer.
 # Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/10
 # Under the GNU GPL v2
-# Last update 2018/11/12 by pavroo
+# Last update 2019/04/04 by pavroo
 LOCAL1="Exit"
 LOCAL2="Name"
 LOCAL3="Description"
@@ -15,7 +15,7 @@ LOCAL10="The application is already installed!"
 LOCAL11="Exiting..."
 LOCAL12="The application has been installed successfully!"
 LOCAL13="Something is wrong! \nProbably you have stopped the installation or your internet connection is broken.\n\nAnyway if you have downloaded the installer already, you can run it manually:"
-LOCAL15="You have to remove an older version of VMware Player from your system before installing a new one. \n\nWould you like to remove it now?"
+LOCAL14="You have to remove an older version of VMware Player from your system before installing a new one. \n\nWould you like to remove it now?"
 LOCAL15="Nothing has been changed! \n\nClick OK to quit."
 LOCAL16="Something is wrong! \nCan't find the new version of VMware Player Installer.\n\nCheck your internet connection and try again."
 LOCAL17="The older version of VMware Player has been NOT removed so can NOT be upgraded."
