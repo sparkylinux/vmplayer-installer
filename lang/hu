@@ -1,0 +1,32 @@
+# Hungarian localization file for VMPlayer Installer. (Translated by Nemomen)
+# Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/10
+# Under the GNU GPL v2
+# Last update 2019/09/22 by pavroo
+LOCAL1="Kilépés"
+LOCAL2="Név"
+LOCAL3="Leírás"
+LOCAL4="VMware Player On-Line Telepítő"
+LOCAL5="Az On-Line Telepítő kiszolgálja:\na VMware Player 15/12 64 bitest\nvagy \na VMware Player 6 32 bitest\n\nKérjük, válasszon opciót!:
+LOCAL6="Telepítse a VMware Playert!"
+LOCAL7="Frissítse/korszerűsítse a VMware Playert!"
+LOCAL8="Távolítsa el a rendszerből a VMware Playert!"
+LOCAL9="Ne tegyen semmit, később fogom telepíteni."
+LOCAL10="Az alkalmazás már telepítve!"
+LOCAL11="Kilépés..."
+LOCAL12="Az alkalmazás sikeresen telepítve!"
+LOCAL13="Valami hibás! \nTalán megszakította a telepítést, vagy megszakadt az Internet kapcsolat. \n\nMindazonáltal ha már letöltötte a telepítőt, kézzel tudja futtatni.”
+LOCAL14="Mielőtt újat telepítene, el kell távolítania a VMware Lejátszó korábbi változatát a rendszeréből. \n\nKívánja most eltávolítani?
+LOCAL15="Semmi sem változott! \n\nKattintson OK-t a kilépéshez!"
+LOCAL16="Valami hibás! \nNem található új változat a VMware Player Telepítőhöz. \n\nEllenőrizze Internet kapcsolatát és próbálja újra!"
+LOCAL17="A VMware Lejátszó korábbi változata NINCS eltávolítva, így NEM frissíthető/korszerűsíthető."
+LOCAL18=" A VMware Lejátszó korábbi változata sikeresen eltávolítva. \n\nMost tud egy újat telepíteni.”
+LOCAL19="Az Internet kapcsolati teszt sikertelen! \n\nLehet, hogy Ön NEM kapcsolódik az Internet-hálózatra vagy a  projekt szerver nem érhető el. \n\nEllenőrizze és próbálja újra!”
+LOCAL20="Nem található az Ön gépére telepítve VMware Lejátszó, így nem frissíthető/korszerűsíthető.”
+LOCAL21="Ez el fogja távolítani a VMware Lejátszót az Ön rendszeréből. \n\nKívánja most eltávolítani?"
+LOCAL22="NINCS eltávolítva a VMware Player."
+LOCAL23="A VMware Playert eltávolították vagy nincs telepítve az Ön gépére."
+LOCAL24="Ez nem telepíthető az Ön Debian/Sparky változatára."
+LOCAL25="Válasszon VMware verziót telepítésre: 15 vagy 12."
+### .desktop file to be translated to
+# Name[en_US]=VMware Player Installer
+# Comment[en_US]=This lets you install, upgrade and remove VMware Player
