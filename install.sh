@@ -18,6 +18,7 @@ if [ "$1" = "uninstall" ]; then
 	rm -r /usr/bin/sparky-vmplayer-installer
 	rm -rf /usr/share/sparky/vmplayer-installer
 	rm -f /usr/lib/sparky-aptus/system/vmplayer-installer.desktop
+	rm -f /usr/share/pixmaps/vmware.svg
 else
 	cp bin/sparky-vmplayer-installer /usr/bin/
 	if [ ! -d /usr/share/sparky/vmplayer-installer ]; then
@@ -28,4 +29,5 @@ else
 		mkdir -p /usr/lib/sparky-aptus/system
 	fi
 	cp system/* /usr/lib/sparky-aptus/system/
+	cp pixmaps/* /usr/share/pixmaps/
 fi
