@@ -4,32 +4,32 @@
 # from VMware server and run the installer
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2020 under the GNU GPL2 License
-# Last update 2020/03/17
+# Last update 2020/06/03
 
 DEFLOCDIR="/usr/share/sparky/vmplayer-installer"
-if [ "`cat /etc/default/locale | grep de`" != "" ]; then
+if [ "`cat /etc/default/locale | grep LANG=de`" != "" ]; then
 . $DEFLOCDIR/de
-elif [ "`cat /etc/default/locale | grep el`" != "" ]; then
+elif [ "`cat /etc/default/locale | grep LANG=el`" != "" ]; then
 . $DEFLOCDIR/el
-elif [ "`cat /etc/default/locale | grep es`" != "" ]; then
+elif [ "`cat /etc/default/locale | grep LANG=es`" != "" ]; then
 . $DEFLOCDIR/es
-elif [ "`cat /etc/default/locale | grep fr`" != "" ]; then
+elif [ "`cat /etc/default/locale | grep LANG=fr`" != "" ]; then
 . $DEFLOCDIR/fr
-elif [ "`cat /etc/default/locale | grep hu`" != "" ]; then
+elif [ "`cat /etc/default/locale | grep LANG=hu`" != "" ]; then
 . $DEFLOCDIR/hu
-elif [ "`cat /etc/default/locale | grep id_ID`" != "" ]; then
+elif [ "`cat /etc/default/locale | grep LANG=id_ID`" != "" ]; then
 . $DEFLOCDIR/id_ID
-elif [ "`cat /etc/default/locale | grep it`" != "" ]; then
+elif [ "`cat /etc/default/locale | grep LANG=it`" != "" ]; then
 . $DEFLOCDIR/it
-elif [ "`cat /etc/default/locale | grep ja_JP`" != "" ]; then
+elif [ "`cat /etc/default/locale | grep LANG=ja_JP`" != "" ]; then
 . $DEFLOCDIR/ja
-elif [ "`cat /etc/default/locale | grep pl`" != "" ]; then
+elif [ "`cat /etc/default/locale | grep LANG=pl`" != "" ]; then
 . $DEFLOCDIR/pl
-elif [ "`cat /etc/default/locale | grep pt_BR`" != "" ]; then
+elif [ "`cat /etc/default/locale | grep LANG=pt_BR`" != "" ]; then
 . $DEFLOCDIR/pt_BR
-elif [ "`cat /etc/default/locale | grep pt_PT`" != "" ]; then
+elif [ "`cat /etc/default/locale | grep LANG=pt_PT`" != "" ]; then
 . $DEFLOCDIR/pt_PT
-elif [ "`cat /etc/default/locale | grep ru`" != "" ]; then
+elif [ "`cat /etc/default/locale | grep LANG=ru`" != "" ]; then
 . $DEFLOCDIR/ru
 else
 . $DEFLOCDIR/en
@@ -37,7 +37,8 @@ fi
 
 testroot="`whoami`"
 if [ "$testroot" != "root" ]; then
-	/usr/bin/remsu $0 &
+	echo "Must be root... Exiting now..."
+	exit 1
 fi
 
 DIALOG="yad --window-icon=vmware --width=450 --height=200 --center"
@@ -61,7 +62,7 @@ fi
 
 SERVER="https://download3.vmware.com/software/player/file"
 PACK32="VMware-Player-6.0.6-2700073.i386.bundle"
-PACK64="VMware-Player-15.5.2-15785246.x86_64.bundle"
+PACK64="VMware-Player-15.5.5-16285975.x86_64.bundle"
 PACK6412="VMware-Player-12.5.9-7535481.x86_64.bundle"
 
 ARCHARM="`uname -m | grep arm`"
@@ -118,14 +119,6 @@ cd $WORKDIR
 if [ "$ARCH" = "" ]; then
 	$SPARKYXTERM "wget $SERVER/$PACK32"
 else
-	#$DIALOG $TITLE"$TITLETEXT" $VMVERSION $TEXT"$LOCAL25"
-	#if [ "$?" = "0" ]; then
-	#	$SPARKYXTERM "wget $SERVER/$PACK64"
-	#elif [ "$?" = "1" ]; then
-	#	$SPARKYXTERM "wget $SERVER/$PACK6412"
-	#else
-	#	exit 1
-	#fi
 CHOICES2=`$DIALOG2 $TITLE"$TITLETEXT" $OKEXIT $MENU $TEXT"$LOCAL25" \
 15 "v.15" \
 12 "v.12" \
@@ -146,13 +139,13 @@ Exit "$LOCAL9"`
 	else
 		exit 1
 	fi
-
 fi
 
 # install vmplayer
 PACKTEST=`ls $WORKDIR | grep 'bundle' | awk '{print $1}'`
 if [ -f $WORKDIR/*.bundle ]; then
 	cd $WORKDIR
+	chmod +x $PACKTEST
 	sh $PACKTEST
 fi
 
@@ -228,6 +221,7 @@ if [ -f /usr/bin/vmplayer ]; then
 		PACKTEST=`ls $WORKDIR | grep 'bundle' | awk '{print $1}'`
 		if [ -f $WORKDIR/*.bundle ]; then
 			cd $WORKDIR
+			chmod +x $PACKTEST
 			sh $PACKTEST
 		fi
 	fi
