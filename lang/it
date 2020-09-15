@@ -1,7 +1,7 @@
 # File di localizzazione in Italiano per VMPlayer Installer.,
 # Copyright 2015 Carlo Troiani <troianicarlo@gmail.com> 12/11/2015
 # Rilasciato sotto licenza GNU GPL v2
-# Last update 2019/04/04 by pavroo
+# Last update 2020/07/19 by Carlo
 LOCAL1="Esci"
 LOCAL2="Nome"
 LOCAL3="Descrizione"
@@ -26,7 +26,7 @@ LOCAL21="Questo rimuoverò Player dal sistema.\n\nVuoi procedere con la rimozion
 LOCAL22="VMware Player NON è stato rimosso."
 LOCAL23="VMware Player è stato rimosso, ovvero non era installato sul tuo computer."
 LOCAL24="Non può essere installato sulla tua versione di Debian/Sparky."
-LOCAL25="Choose a VMware version to be installed: 15 or 12."
+LOCAL25="Scegli quale versione di VMware installare: la 15 o la 12."
 ### .desktop file to be translated too
 # Name[it_IT]=VMware Player Installer
 # Comment[it_IT]=Installa, aggiorna e rimuovi VMware Player
