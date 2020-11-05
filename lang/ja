@@ -1,14 +1,14 @@
 # Japanese localization file for VMPlayer Installer.
 # Copyright 2015 Paweł "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/10
 # Under the GNU GPL v2
-# Last update 2019/04/04 by pavroo
 # Translated to Japanese by BALLOON a.k.a. Fu-sen.
 # Translated to Japanese by FuRuYa7.
+# Last update 2020/11/04 by pavroo
 LOCAL1="終了"
 LOCAL2="名前"
 LOCAL3="説明"
 LOCAL4="VMware Player オンラインインストールツール"
-LOCAL5="オンラインインストールツールは以下を提供します。:\nVMware Player 15/12 (64 bit)\nまたは\nVMware Player 6 (32 bit)\n\nオプションを選択して下さい:"
+LOCAL5="オンラインインストールツールは以下を提供します。:\nVMware Player 16/15/12 (64 bit)\nまたは\nVMware Player 6 (32 bit)\n\nオプションを選択して下さい:"
 LOCAL6="VMware Player のインストール"
 LOCAL7="VMware Player の更新"
 LOCAL8="VMware Player をシステムから削除"
@@ -28,7 +28,7 @@ LOCAL21="VMware Player を削除します。\n\n削除してもよろしいで�
 LOCAL22="VMware Player は削除されませんでした。"
 LOCAL23="VMware Player は削除されたか、インストールされていません。"
 LOCAL24="Debian/Sparky のバージョンにはインストールできません。"
-LOCAL25="インストールする VMware Player のバージョンを選択：15 または 12"
+LOCAL25="インストールする VMware Player のバージョンを選択：16, 15 または 12"
 ### .desktop file to be translated too
 # Name[ja_JP]=VMware Player インストールツール
 # Comment[ja_JP]=VMware Playerをインストール、アップグレード、削除できます

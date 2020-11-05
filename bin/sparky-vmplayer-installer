@@ -4,7 +4,7 @@
 # from VMware server and run the installer
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2020 under the GNU GPL2 License
-# Last update 2020/10/05
+# Last update 2020/11/04
 
 DEFLOCDIR="/usr/share/sparky/vmplayer-installer"
 if [ "`cat /etc/default/locale | grep LANG= | grep de`" != "" ]; then
@@ -42,7 +42,7 @@ if [ "$testroot" != "root" ]; then
 fi
 
 DIALOG="yad --window-icon=vmware --width=450 --height=200 --center"
-DIALOG2="yad --window-icon=vmware --width=450 --height=300 --center"
+DIALOG2="yad --window-icon=vmware --width=450 --height=350 --center"
 TITLE="--always-print-result --dialog-sep --image=vmware --title="
 TEXT="--text="
 OKEXIT=" --button=Ok:0 --button=$LOCAL1:1 "
@@ -62,8 +62,9 @@ fi
 
 SERVER="https://download3.vmware.com/software/player/file"
 PACK32="VMware-Player-6.0.6-2700073.i386.bundle"
-PACK64="VMware-Player-15.5.6-16341506.x86_64.bundle"
+PACK6415="VMware-Player-15.5.6-16341506.x86_64.bundle"
 PACK6412="VMware-Player-12.5.9-7535481.x86_64.bundle"
+PACK6416="VMware-Player-16.0.0-16894299.x86_64.bundle"
 ARCHARM="`uname -m | grep arm`"
 if [ "$ARCHARM" != "" ]; then
 	$DIALOG $TEXT"\n$LOCAL24\n\n$LOCAL11" $TITLE"$TITLETEXT" $MSGBOX
@@ -124,6 +125,7 @@ if [ "$ARCH" = "" ]; then
 	$SPARKYXTERM "wget $SERVER/$PACK32"
 else
 CHOICES2=`$DIALOG2 $TITLE"$TITLETEXT" $OKEXIT $MENU $TEXT"$LOCAL25" \
+16 "v.16" \
 15 "v.15" \
 12 "v.12" \
 Exit "$LOCAL9"`
@@ -134,8 +136,10 @@ Exit "$LOCAL9"`
 		exit 1
 	fi
 
-	if [ "$CHOICE2" = "15" ]; then
-		$SPARKYXTERM "wget $SERVER/$PACK64"
+	if [ "$CHOICE2" = "16" ]; then
+		$SPARKYXTERM "wget $SERVER/$PACK6416"
+	elif [ "$CHOICE2" = "15" ]; then
+		$SPARKYXTERM "wget $SERVER/$PACK6415"
 	elif [ "$CHOICE2" = "12" ]; then
 		$SPARKYXTERM "wget $SERVER/$PACK6412"
 	elif [ "$CHOICE2" = "Exit" ]; then
@@ -150,7 +154,7 @@ PACKTEST=`ls $WORKDIR | grep 'bundle' | awk '{print $1}'`
 if [ -f $WORKDIR/*.bundle ]; then
 	cd $WORKDIR
 	chmod +x $PACKTEST
-	sh $PACKTEST
+	$SPARKYXTERM "sh $PACKTEST"
 fi
 
 # check has vmplayer been installed
@@ -192,11 +196,26 @@ if [ -f /usr/bin/vmplayer ]; then
 		if [ "$ARCH" = "" ]; then
 			$SPARKYXTERM "wget $SERVER/$PACK32"
 		else
-			$DIALOG $TITLE"$TITLETEXT" $VMVERSION $TEXT"$LOCAL25"
+			CHOICES2=`$DIALOG2 $TITLE"$TITLETEXT" $OKEXIT $MENU $TEXT"$LOCAL25" \
+16 "v.16" \
+15 "v.15" \
+12 "v.12" \
+Exit "$LOCAL9"`
+
 			if [ "$?" = "0" ]; then
-				$SPARKYXTERM "wget $SERVER/$PACK64"
-			elif [ "$?" = "1" ]; then
+				CHOICE2=`echo $CHOICES2 | cut -d "|" -f 1`
+			else
+				exit 1
+			fi
+
+			if [ "$CHOICE2" = "16" ]; then
+				$SPARKYXTERM "wget $SERVER/$PACK6416"
+			elif [ "$CHOICE2" = "15" ]; then
+				$SPARKYXTERM "wget $SERVER/$PACK6415"
+			elif [ "$CHOICE2" = "12" ]; then
 				$SPARKYXTERM "wget $SERVER/$PACK6412"
+			elif [ "$CHOICE2" = "Exit" ]; then
+				exit 1
 			else
 				exit 1
 			fi
@@ -204,9 +223,12 @@ if [ -f /usr/bin/vmplayer ]; then
 
 		PACKTEST=`ls $WORKDIR | grep 'bundle' | awk '{print $1}'`
 		if [ -f $WORKDIR/*.bundle ]; then
-
 			# uninstall vmplayer
-			/usr/lib/vmware-installer/2.1.0/vmware-installer -u vmware-player
+			if [ -f /usr/lib/vmware-installer/2.1.0/vmware-installer ]; then
+				$SPARKYXTERM "/usr/lib/vmware-installer/2.1.0/vmware-installer -u vmware-player"
+			elif [ -f /usr/lib/vmware-installer/3.0.0/vmware-installer ]; then
+				$SPARKYXTERM "/usr/lib/vmware-installer/3.0.0/vmware-installer -u vmware-player"
+			fi
 		else
 			$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"$LOCAL16\n\n$LOCAL11"
 			mainmenu
@@ -226,7 +248,7 @@ if [ -f /usr/bin/vmplayer ]; then
 		if [ -f $WORKDIR/*.bundle ]; then
 			cd $WORKDIR
 			chmod +x $PACKTEST
-			sh $PACKTEST
+			$SPARKYXTERM "sh $PACKTEST"
 		fi
 	fi
 
@@ -258,7 +280,11 @@ if [ -f /usr/bin/vmplayer ]; then
 
 	else
 		# uninstall vmplayer
-		/usr/lib/vmware-installer/2.1.0/vmware-installer -u vmware-player
+		if [ -f /usr/lib/vmware-installer/2.1.0/vmware-installer ]; then
+			$SPARKYXTERM "/usr/lib/vmware-installer/2.1.0/vmware-installer -u vmware-player"
+		elif [ -f /usr/lib/vmware-installer/3.0.0/vmware-installer ]; then
+			$SPARKYXTERM "/usr/lib/vmware-installer/3.0.0/vmware-installer -u vmware-player"
+		fi
 	fi
 
 	# check has vmplayer been removed

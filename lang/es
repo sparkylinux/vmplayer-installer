@@ -1,12 +1,12 @@
 # Archivo de localización en español para VMPlayer Installer.
 # Copyright 2015 Fernando "seacat" Velo <seacat.linux@gmail.com> 2015/12/22
 # Bajo la licencia GNU GPL v2
-# Last update 2019/04/04 by pavroo
+# Last update 2020/11/04 by pavroo
 LOCAL1="Salir"
 LOCAL2="Nombre"
 LOCAL3="Descripción"
 LOCAL4="Instalador online del reproductor VMware"
-LOCAL5="El instalador online proporciona:\nReproductor VMware 15/12 64 bits\no\nReproductor VMware Player 6 32 bits\n\nPor favor, elija una opción:"
+LOCAL5="El instalador online proporciona:\nReproductor VMware 16/15/12 64 bits\no\nReproductor VMware Player 6 32 bits\n\nPor favor, elija una opción:"
 LOCAL6="Instalar el reproductor VMware"
 LOCAL7="Actualizar el reproductor VMware"
 LOCAL8="Eliminar el reproductor VMware de su sistema"
@@ -26,7 +26,7 @@ LOCAL21="Esto eliminará al reproductor VMware de su sistema.\n\n¿Quiere elimin
 LOCAL22="NO se eliminó el reproductor VMware."
 LOCAL23="Se eliminó el reproductor VMware o nunca estuvo instalado en su computadora."
 LOCAL24="It can not be installed on your version of Debian/Sparky."
-LOCAL25="Choose a VMware version to be installed: 15 or 12."
+LOCAL25="Choose a VMware version to be installed: 16, 15 or 12."
 ### .desktop file to be translated too
 # Name[es_AR]=Instalador del reproductor VMware
 # Comment[es_AR]=Esto le permite instalar, actualizar y eliminar el reproductor VMware

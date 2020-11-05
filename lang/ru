@@ -1,12 +1,12 @@
 # Файл русской локализации для установщика VMPlayer.
 # Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/10
 # Под лицензией GNU GPL v2
-# Last update 2019/04/04 by pavroo
+# Last update 2020/11/04 by pavroo
 LOCAL1="Выход"
 LOCAL2="Имя"
 LOCAL3="Описание"
 LOCAL4="Онлайн-установщик VMware Player"
-LOCAL5="Онлайн-установщик обеспечивает:\nVMware Player 15/12 64 bit\nили\nVMware Player 6 32 bit\n\nПожалуйста, выберите опцию:"
+LOCAL5="Онлайн-установщик обеспечивает:\nVMware Player 16/15/12 64 bit\nили\nVMware Player 6 32 bit\n\nПожалуйста, выберите опцию:"
 LOCAL6="Установить VMware Player"
 LOCAL7="Обновить VMware Player"
 LOCAL8="Удалить VMware Player из системы"
@@ -26,7 +26,7 @@ LOCAL21="Это удалит VMware Player из вашей системы.\n\nВ
 LOCAL22="VMware Player НЕ был удален."
 LOCAL23="VMware Player был удален или не был установлен на вашем компьютере."
 LOCAL24="Его нельзя установить на вашу версию Debian/Sparky."
-LOCAL25="Выберите версию VMware для установки: 15 или 12."
+LOCAL25="Выберите версию VMware для установки: 16, 15 или 12."
 ### .desktop file to be translated to ChourS
 # Name[ru_RU]=Установщик VMware Player
 # Comment[ru_RU]=Позволяет вам устанавливать, обновлять и удалять VMware Player

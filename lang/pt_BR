@@ -3,12 +3,12 @@
 # Traduzido por  Joel Chaves "Flacc"  <joel_chaves@icloud.com> 15/01/2016
 # Revisado e adaptado por Claudio Cesar de Sá "ccs1664" <ccs1664@gmail.com> 30/01/2016
 # Sob a Licença GNU GPL v2
-# Last update 2019/04/04 by pavroo
+# Last update 2020/11/04 by pavroo
 LOCAL1="Sair"
 LOCAL2="Nome"
 LOCAL3="Descrição"
 LOCAL4="Instalador On-Line do VMware Player"
-LOCAL5="O Instalador Online oferece:\nVMware Player 15/12 64 bit\nou\nVMware Player 6 32 bit\n\nPor favor selecione uma opção:"
+LOCAL5="O Instalador Online oferece:\nVMware Player 16/15/12 64 bit\nou\nVMware Player 6 32 bit\n\nPor favor selecione uma opção:"
 LOCAL6="Instalar o VMware Player"
 LOCAL7="Atualização do VMware Player"
 LOCAL8="Remover o VMware Player  do sistema"
@@ -28,7 +28,7 @@ LOCAL21="Isto irá remover VMware Player de seu sistema.\n\nGostaria de removê-
 LOCAL22="VMware Player NÃO foi removido."
 LOCAL23="VMware Player foi removido com sucesso ou o mesmo  NÃO  está instalado no seu computador."
 LOCAL24="Não pode ser instalado na sua versão do Debian/Sparky."
-LOCAL25="Escolha uma versão do VMware para ser instalado: 15 ou 12."
+LOCAL25="Escolha uma versão do VMware para ser instalado: 16, 15 ou 12."
 ### .desktop file to be translated too
 # Name[pt_BR]=Instalador do VMware Player
 # Comment[pt_BR]=Isto permite-lhe instalar, atualizar e remover o VMware Player

@@ -2,12 +2,12 @@
 # Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/10
 # Under the GNU GPL v2
 # Translated to Indonesian by les kompie
-# Last update 2019/05/25 by pavroo
+# Last update 2020/11/04 by pavroo
 LOCAL1="Keluar"
 LOCAL2="Nama"
 LOCAL3="Deskripsi"
 LOCAL4="Penginstal Online VMware Player"
-LOCAL5="Penginstal online menyediakan:\nVMware Player 15.x.x 64 bit\atau\nVMware Player 6.x.x 32 bit\n\nPilih salah satu:"
+LOCAL5="Penginstal online menyediakan:\nVMware Player 16/15/12 64 bit\atau\nVMware Player 6.x.x 32 bit\n\nPilih salah satu:"
 LOCAL6="Instal VMware Player"
 LOCAL7="Upgrade VMware Player"
 LOCAL8="Hapus VMware Player dari sistem"
@@ -27,7 +27,7 @@ LOCAL21="Ini akan menghapus VMware Player dari sistem anda.\n\nApakah anda ingin
 LOCAL22="VMware Player BELUM dihapus."
 LOCAL23="VMware Player sudah dihapus, atau belum di-instal di komputer anda."
 LOCAL24="Ini tidak bisa di-instal di versi Debian/Sparky anda."
-LOCAL25="Choose a VMware version to be installed: 15 or 12."
+LOCAL25="Choose a VMware version to be installed: 16, 15 or 12."
 ### .desktop file to be translated to
 # Name[id_ID]=Penginstal VMware Player
 # Comment[id_ID]=Ini untuk menginstal, upgrade dan menghapus VMware Player

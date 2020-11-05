@@ -1,12 +1,12 @@
 # German localization file for VMPlayer Installer by Deflet Bertling
 # Copyright 2015 Pawel "pavroo" Pijanowski <pavroo@onet.eu> 2015/11/10
 # Under the GNU GPL v2
-# Last update 2019/04/04 by pavroo
+# Last update 2020/11/04 by pavroo
 LOCAL1="Exit"
 LOCAL2="Name"
 LOCAL3="Beschreibung"
 LOCAL4="VMware Player online Installation"
-LOCAL5="Die online-Installion unterstützt:\nVMware Player 15/12 64 bit\bis\nVMware Player 6.x.x 32 bit\n\nBitte wähle eine Option:"
+LOCAL5="Die online-Installion unterstützt:\nVMware Player 16/15/12 64 bit\bis\nVMware Player 6.x.x 32 bit\n\nBitte wähle eine Option:"
 LOCAL6="Installiere VMware Player"
 LOCAL7="Aktualisiere VMware Player"
 LOCAL8="Entferne VMware Player vom System"
@@ -26,7 +26,7 @@ LOCAL21="Dieses wird den VMware Player von deinem System entfernen.\n\nMöchtest
 LOCAL22="VMware Player wurde NICHT entfernt."
 LOCAL23="VMware Player wurde entfernt oder war nicht auf deinem Computer installiert."
 LOCAL24="Das kann nicht mit deiner Version von Debian/Sparky installiert werden."
-LOCAL25="Choose a VMware version to be installed: 15 or 12."
+LOCAL25="Choose a VMware version to be installed: 16, 15 or 12."
 ### .desktop file to be translated to
 # Name[de_DE]=VMware Player Installer
 # Comment[de_DE]=Er lässt dich VMware Player installieren, aktualisieren und entfernen
