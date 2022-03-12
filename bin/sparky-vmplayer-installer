@@ -3,8 +3,8 @@
 # VMware Player Installer is a script which can download the bundle package
 # from VMware server and run the installer
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
-# Copyright 2014-2021 under the GNU GPL2 License
-# Last update 2021/12/02
+# Copyright 2014-2022 under the GNU GPL2 License
+# Last update 2022/03/12
 
 DEFLOCDIR="/usr/share/sparky/vmplayer-installer"
 if [ "`cat /etc/default/locale | grep LANG= | grep de`" != "" ]; then
@@ -63,7 +63,7 @@ fi
 VER6="6.0.6-2700073"
 VER12="12.5.9-7535481"
 VER15="15.5.7-17171714"
-VER16="16.2.1-18811642"
+VER16="16.2.3-19376536"
 SERVER="https://download3.vmware.com/software/player/file"
 PACK32="VMware-Player-$VER6.i386.bundle"
 PACK6412="VMware-Player-$VER12.x86_64.bundle"
