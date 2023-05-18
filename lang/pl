@@ -27,7 +27,7 @@ LOCAL21="Usunięcie VMware Player z systemu.\n\nCzy chcesz usunąć teraz?"
 LOCAL22="VMware Player NIE został usunięty."
 LOCAL23="VMware Player został usunięty lub nawet nie był zainstalowany na Twoim komputerze."
 LOCAL24="Ta aplikacja nie może być zainstalowany na obecnej wersji Debiana/Sparky."
-LOCAL25="Wybierz wersję VMware do zainstalowania: 16, 15 lub 12."
+LOCAL25="Wybierz wersję VMware do zainstalowania:"
 ### .desktop file, również do przetłumaczenia
 # Name[pl_PL]=VMware Player Instalator
 # Comment[pl_PL]=Pozwala na instalację, aktualizację i usunięcie VMware Player

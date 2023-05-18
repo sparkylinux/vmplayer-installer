@@ -28,7 +28,7 @@ LOCAL21="VMware Player を削除します。\n\n削除してもよろしいで�
 LOCAL22="VMware Player は削除されませんでした。"
 LOCAL23="VMware Player は削除されたか、インストールされていません。"
 LOCAL24="Debian/Sparky のバージョンにはインストールできません。"
-LOCAL25="インストールする VMware Player のバージョンを選択：16, 15 または 12"
+LOCAL25="インストールする VMware Player のバージョンを選択："
 ### .desktop file to be translated too
 # Name[ja_JP]=VMware Player インストールツール
 # Comment[ja_JP]=VMware Playerをインストール、アップグレード、削除できます

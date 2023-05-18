@@ -26,7 +26,7 @@ LOCAL21="Ceci va supprimer le lecteur multimédia VMware de votre système.\n\nV
 LOCAL22="Le lecteur multimédia VMware n'a pu être supprimé."
 LOCAL23="Le lecteur multimédia VMware a été supprimé ou n'a pas été installé sur l'ordinateur."
 LOCAL24="It can not be installed on your version of Debian/Sparky."
-LOCAL25="Choose a VMware version to be installed: 16, 15 or 12."
+LOCAL25="Choose a VMware version to be installed:"
 ### .desktop file to be translated to
 # Name[fr_FR]=Installateur du lecteur multimédia VMware
 # Comment[fr_FR]=Ceci va vous permettre d'installer, mettre à jour ou supprimer le lecteur multimédia VMware

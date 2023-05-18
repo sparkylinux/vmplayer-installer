@@ -26,7 +26,7 @@ LOCAL21="Απεγκατάσταση του VMware Player από το σύστη�
 LOCAL22="Ο VMware Player ΔΕΝ απεγκαταστάθηκε."
 LOCAL23="Ο VMware Player έχει απεγκατασταθεί ή δεν έχει εγκατασταθεί στο σύστημά σας."
 LOCAL24="Δε μπορεί να εγκατασταθεί στην έκδοσή σας Debian/Sparky."
-LOCAL25="Επιλέξτε μια έκδοση του VMware για εγκατάσταση: την 16, 15 ή την 12."
+LOCAL25="Επιλέξτε μια έκδοση του VMware για εγκατάσταση:"
 ### .desktop file to be translated to
 # Name[el_GR]=Εγκατάσταση του VMware Player
 # Comment[el_GR]=Εγκατάσταση/Απεγκατάσταση και Αναβάθμιση του VMware Player

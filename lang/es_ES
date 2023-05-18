@@ -27,7 +27,7 @@ LOCAL21="Esto eliminará VMware Player de su sistema.\n\n¿Desea eliminarlo ahor
 LOCAL22="VMware Player NO ha sido eliminado."
 LOCAL23="VMware Player ha sido eliminado o no ha sido instalado en su equipo."
 LOCAL24="No puede ser instalado en su versión de of Debian/Sparky."
-LOCAL25="Escoja una versión de VMware a instalar: 16, 15 o 12."
+LOCAL25="Escoja una versión de VMware a instalar:"
 ### .desktop file to be translated to
 # Name[es_ES]=Instalador de VMware Player
 # Comment[es_ES]=Permite instalar, actualizar y eliminar VMware Player

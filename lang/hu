@@ -26,7 +26,7 @@ LOCAL21="Ez el fogja távolítani a VMware Lejátszót az Ön rendszeréből. \n
 LOCAL22="NINCS eltávolítva a VMware Player."
 LOCAL23="A VMware Playert eltávolították vagy nincs telepítve az Ön gépére."
 LOCAL24="Ez nem telepíthető az Ön Debian/Sparky változatára."
-LOCAL25="Válasszon VMware verziót telepítésre: 16, 15 vagy 12."
+LOCAL25="Válasszon VMware verziót telepítésre:"
 ### .desktop file to be translated to
 # Name[en_US]=VMware Player Installer
 # Comment[en_US]=This lets you install, upgrade and remove VMware Player
