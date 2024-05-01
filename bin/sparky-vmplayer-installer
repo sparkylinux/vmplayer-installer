@@ -4,7 +4,7 @@
 # from VMware server and run the installer
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2024 under the GNU GPL2 License
-# Last update 2024/02/28
+# Last update 2024/05/01
 
 DEFLOCDIR="/usr/share/sparky/vmplayer-installer"
 if [ "`cat /etc/default/locale | grep LANG= | grep de`" != "" ]; then
@@ -73,7 +73,7 @@ VER16="16.2.5-20904516"
 VER17="17.5.1-23298084"
 SERVER="https://download3.vmware.com/software/player/file"
 SERVER16="https://download3.vmware.com/software/WKST-PLAYER-1625"
-SERVER17="https://download3.vmware.com/software/WKST-PLAYER-1750"
+SERVER17="https://download3.vmware.com/software/WKST-PLAYER-1751"
 PACK32="VMware-Player-$VER6.i386.bundle"
 PACK6412="VMware-Player-$VER12.x86_64.bundle"
 PACK6415="VMware-Player-$VER15.x86_64.bundle"
