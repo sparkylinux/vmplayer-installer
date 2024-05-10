@@ -4,7 +4,7 @@
 # from VMware server and run the installer
 # Created by Paweł "pavroo" Pijanowski 2014/08/15
 # Copyright 2014-2024 under the GNU GPL2 License
-# Last update 2024/05/01
+# Last update 2024/05/11
 
 DEFLOCDIR="/usr/share/sparky/vmplayer-installer"
 if [ "`cat /etc/default/locale | grep LANG= | grep de`" != "" ]; then
@@ -42,10 +42,10 @@ else
 fi
 
 testroot="`whoami`"
-if [ "$testroot" != "root" ]; then
-	echo "Must be root... Exiting now..."
-	exit 1
-fi
+#if [ "$testroot" != "root" ]; then
+#	echo "Must be root... Exiting now..."
+#	exit 1
+#fi
 
 DIALOG="yad --window-icon=vmware --width=450 --height=200 --center"
 DIALOG2="yad --window-icon=vmware --width=450 --height=350 --center"
@@ -58,7 +58,10 @@ MENU="--list --column=$LOCAL2 --column=$LOCAL3"
 TITLETEXT="$LOCAL4"
 WORKDIR="/tmp/vmplayer"
 ARCH=`uname -r | grep "amd64" | awk '{print $1}'`
-
+### just quit ###
+$DIALOG $TITLE"$TITLETEXT" $MSGBOX $TEXT"\nIt does NOT work any more.\n\nInstall VMware manually now.\n\nExiting..."
+exit 0
+### that't it ###
 if [ -f /usr/bin/sparky-xterm ];then
 	SPARKYXTERM="/usr/bin/sparky-xterm"
 else
